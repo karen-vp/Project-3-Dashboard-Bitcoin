@@ -2,7 +2,8 @@ const grafico = document.getElementById('myChart');
 import {priceList, bpiPrice, bpiPriceMxn} from "./index.js";
 
 const myGrafica = async()=>{
-await currentprice()
+await bpiPrice()
+await bpiPriceMxn()
 const myChart = new Chart(grafico, {
      type: 'line',
      data : {
