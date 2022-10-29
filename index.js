@@ -1,5 +1,7 @@
-export let priceList = []
-export const bpiPrice = async()=>{
+ import {showGraphic} from './chart.js'
+
+ let priceList = []
+ const bpiPrice = async()=>{
     const API = 'https://api.coindesk.com/v1/bpi/currentprice.json'
     const resp= await fetch(API,{method:'GET'})
     const prices= await resp.json();
@@ -8,17 +10,9 @@ export const bpiPrice = async()=>{
     const euro = prices.bpi.EUR.rate;
     const dolar = prices.bpi.USD.rate;
     const libra = prices.bpi.GBP.rate;
-    return priceList = [euro,dolar,libra]
-
-}
-
-export const bpiPriceMxn = async()=>{
-    const API = 'https://api.coindesk.com/v1/bpi/currentprice/MXN.json'
-
-    const resp= await fetch(API, {method: 'GET'})
-    const price= await resp.json();
+    priceList = [euro,dolar,libra]
     
-    const mxn = price.bpi.MXN.rate;
-    // console.log(mxn)
-    return priceList.push(mxn)
+    showGraphic(priceList)
 }
+
+bpiPrice()
