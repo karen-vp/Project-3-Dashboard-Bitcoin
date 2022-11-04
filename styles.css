@@ -1,0 +1,119 @@
+/*SECCION GLOBAL*/
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: "Segoe IU", sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    padding: 70px;
+    width:100%;
+    height: 400px;
+    background-color: rgba(222, 7, 59, 0.05);
+    background-image: url("../../images/imgbitcoin.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;}   
+
+
+h2{
+    margin-top: 80px;
+    font-size: 40px;
+    font: bolder;
+    font-family: "Segoe IU", sans-serif;
+    color:white;
+    
+}
+
+#a-ref, h3{
+    margin-top: 15px;
+    font-size: 25px;
+    font: bolder;
+    font-family: "Segoe IU", sans-serif;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 40px;
+    width:100%;
+    height: 100%;
+    margin-top:0px;
+    background-color: rgb(51, 67, 158);
+}
+.form-side{
+    width:100%;
+    margin-top:10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#cotizar{
+    width: 100%;
+    margin-top: 15px;
+    font-size: 1.1em;
+    background-color: black;
+    border: none;
+    color:white;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+select{
+    background-color: white;
+    text-align: center;
+    border: 2px;
+    margin: 0;
+    width: 100%;
+    font-size: 1.1em;
+    padding:5px;
+    
+}
+
+.main{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9e9e9;
+    width: 100%;
+    height: 600px;
+    
+}
+
+.output-div{
+    font-size: 1.5em;
+    padding: 10px 40px;
+    color:rgb(51, 67, 158);
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid grey;
+    
+}
+
+.chart{
+    padding: 15px;
+    width:500px;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:grey;
+    font-size: 0.9em;
+    width: 100%;
+    padding: 15px;
+}
+
