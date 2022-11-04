@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"/>
-    <title>Buscador APIs</title>
+    <title>Bitcoin - Dashboard App</title>
    
 </head>
 <body>
@@ -13,6 +13,7 @@
     <section class="main-section">
         <div  class="header"> 
             <h2>Precio actual del bitcoin</h2>
+            <h3>Base de datos usada:</h3><a id="a-ref"href="https://old.coindesk.com/price/bitcoin">Powered by CoinDesk</a>
         </div>
         <div class="container">
             <div class="image-side"></div>
@@ -24,23 +25,26 @@
                         <option value="GBP">Libras</option>
                         <option value="EUR">Euros</option>
                     </select>
-    
-    
-                    <input class="" type="submit" value="Cotizar" />
-                    <div class="container-answer"></div>
-                   
+                    <button id="cotizar">Cotizar</button>
                 </form>
-
+                
             </div>
         </div>
-        <div class="chart">
+    </section>
 
+    <section class="main">
+        <div class="output-div">
+            <label id="outputcurrency"></label>
+        </div>
+        <div class="chart">
             <canvas id="myChart" width="400" height="400">
-    
             </canvas>
-    
         </div>
     </section>
+
+    <footer>
+        <p>Equipo 8 - Ucamp</p>
+    </footer>
 
     <!--Importando libreria Chart.js-->
     
