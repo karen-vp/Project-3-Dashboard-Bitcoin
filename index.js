@@ -1,4 +1,5 @@
  import {showGraphic} from './chart.js'
+ import {getValue} from './select.js'
 
  let priceList = []
  const bpiPrice = async()=>{
