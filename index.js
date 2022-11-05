@@ -14,5 +14,27 @@
     
     showGraphic(priceList)
 }
+// funtion getmoney
+
+document.getElementById("cotizar").addEventListener("click",()=>{
+const  moneda=
+    document.getElementById("moneda").value
+    
+    const Url="https://api.coindesk.com/v1/bpi/currentprice/"+moneda+".json"
+    const resp= fetch(Url,{method:'GET'})
+    .then((res)=>
+    {
+    res.json().then((r)=> document.getElementById("outputcurrency").innerHTML=r.disclaimer)
+    //console.log(res.status)
+    }
+   
+
+    );
+    //console.log()
+    //console.log(prices.json())
+});
+
 
 bpiPrice()
+
+
