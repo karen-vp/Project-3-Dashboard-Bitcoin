@@ -22,17 +22,13 @@ const  moneda=
     
     const Url="https://api.coindesk.com/v1/bpi/currentprice/"+moneda+".json"
     console.log(moneda)
+
     const resp= fetch(Url,{method:'GET'})
     .then((res)=>
     {
-    res.json().then((r)=> document.getElementById("outputcurrency").innerHTML=r.bpi.USD.rate)
-    //console.log(res.status)
+    res.json().then((r)=> document.getElementById("outputcurrency").innerHTML=r['bpi'][moneda]['rate'])
     }
-   
-
     );
-    //console.log()
-    //console.log(prices.json())
 });
 
 
